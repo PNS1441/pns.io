@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#logo img{
+    width: 5%;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+header{
+    background-color: rgb(17, 239, 239);
+    color: azure;
+    padding: 20px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+nav li{
+    margin-right: 15px;
+    margin-top: 15px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+nav li:hover{
+    background-color: blueviolet;
+    padding: 5px;
+    border-radius: none;
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-top: 5px;
+    color: black;
+}
+main{
+    padding: 50px;
+}
+.section{
+    text-align: center;
+}
+.section p{
+    text-align: center;
+}
+.section h2{
+    text-transform: uppercase;
+    text-align: center;
+    color: chocolate;
+    margin-bottom: 20px;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.products{
+    width: calc(33.3% - 20px);
+    margin-bottom: 50px;
+    text-align: center;
+}
+.products img{
+    width: 100%;
+    border: 2px solid purple;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.products h3{
+    margin: 0;
+}
+.products p{
+    margin: 10px 0;
+}
+.products button{
+    border-color: #222;
+    color: #fff;
+    border: 1px solid gray;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.section form{
+    margin-left: 35%;
+}
+.section form input{
+    margin-left: 50px;
+    width: 300px;
+    height: 30px;
+    margin-top: 20px;
+}
+#email{
+    margin-left: 74px;
+}
+#message{
+    margin-left: 52px;
+}
+.section form button{
+    width: 50px;
+    height: 25px;
+    margin-left: 365px;
+    margin-top: 20px;
+}
+footer{
+    background-color: aqua;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+@media screen and(max-width){
+    header{
+        padding: 10px;
+    }
+    nav ul{
+        flex-wrap: wrap;
+    }
+    nav li{
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .products{
+        flex-wrap: wrap;
+    }
+    .products{
+        width: calc(100%/2 - 10px);
+        margin-bottom: 30px;
+    }
+}
